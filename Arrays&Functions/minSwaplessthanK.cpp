@@ -7,23 +7,23 @@ int minSwap(int arr[], int n, int k)
     for (int i = 0; i < n; i++)
     {
         if (arr[i] <= k)
-            ++count;
+            count++;
     }
     // Finding elements which are greater than k in the current window of size count
     int bad = 0;
     for (int i = 0; i < count; i++)
     {
         if (arr[i] > k)
-            ++bad;
+            bad++;
     }
     // Initialize answer with 'bad' value of current window
     int ans = bad;
     for (int i = 0, j = count; j < n; i++, j++)
     {
         if (arr[i] > k)
-            --bad;
+            bad--;
         if (arr[j] > k)
-            ++bad;
+            bad++;
         ans = min(ans, bad);
     }
     return ans;
