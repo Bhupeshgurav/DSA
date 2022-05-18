@@ -1,13 +1,6 @@
 #include <iostream>
 using namespace std;
 
-vector<int> searchRange(vector<int> &nums, int target)
-{
-    int a = firstOccurence(arr, target, n);
-    int b = lastOccurence(arr, target, n);
-    return vector<int>{a, b};
-}
-
 int firstOccurence(int arr[], int target, int n)
 {
     int start = 0;
@@ -58,7 +51,7 @@ int lastOccurence(int arr[], int target, int n)
         {
             start = mid + 1;
         }
-        mid = start + (end - start) / 2;
+        mid = start + (end - 1) / 2;
     }
     return ans;
 }
@@ -68,6 +61,6 @@ int main()
     int arr[] = {1, 2, 3, 4, 4, 4, 4, 7, 7};
     int n = 8;
     int target = 4;
-    int a = firstOccurence(arr, target, 8);
-    int b = lastOccurence(arr, target, 8);
+    cout << firstOccurence(arr, target, 8);
+    cout << lastOccurence(arr, target, 8);
 }
