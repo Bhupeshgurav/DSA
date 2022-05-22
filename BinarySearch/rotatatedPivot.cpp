@@ -10,9 +10,9 @@ int getPivot(vector<int> &arr, int n)
     int mid = s + (e - s) / 2;
     while (s < e)
     {
-        if (arr[mid] >= arr[0])
+        if (arr[mid] >= arr[0]) // on the above line
         {
-            s = mid + 1;
+            s = mid + 1; // we have to go to the below line therefore this condition
         }
         else
         {
