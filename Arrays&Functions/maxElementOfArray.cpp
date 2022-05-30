@@ -5,7 +5,7 @@ using namespace std;
 int maxArray(int arr[], int n)
 {
     int ans = INT_MIN;
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < n; i++)
     {
         ans = max(ans, arr[i]);
     }
