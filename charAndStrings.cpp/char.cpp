@@ -17,14 +17,20 @@ void reverse(char arr[])
 int main()
 {
     // creation
-    char name[10];
+    char name[2];
 
     // input
     cin >> name;
     reverse(name);
     cout << "Reversed name is:" << name;
 
+    cout << "String starts from here " << endl;
+    // creation
+    string str;
+    // input
+    cin >> str;
     // print
+    cout << "str is" << str << endl;
 
     return 0;
 }
