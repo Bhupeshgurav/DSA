@@ -1,6 +1,18 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+int getLength(char arr[])
+{
+    int length = 0;
+    int index = 0;
+    while (arr[index] != '\0')
+    {
+        length++;
+        index++;
+    }
+    return length;
+}
+
 void reverse(char arr[])
 {
     int s = 0;
@@ -17,7 +29,7 @@ void reverse(char arr[])
 int main()
 {
     // creation
-    char name[2];
+    char name[12];
 
     // input
     cin >> name;
@@ -31,6 +43,9 @@ int main()
     cin >> str;
     // print
     cout << "str is" << str << endl;
+
+    // getting length of a character array
+    cout << getLength(name);
 
     return 0;
 }
