@@ -1,6 +1,10 @@
 #include <iostream>
 using namespace std;
 
+// TC: O(n)
+// SC: O(1)
+
+// Without preserving the order
 void negativeOnOneSide(int arr[], int n)
 {
     int j = 0;

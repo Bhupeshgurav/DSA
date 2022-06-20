@@ -16,11 +16,10 @@ void sortZeroOneTwo(int arr[], int n)
     }
 
     int i = 0;
-    while (zero != 0)
+    while (zero--)
     {
         arr[i] = 0;
         i++;
-        zero--;
     }
 
     while (one--)
