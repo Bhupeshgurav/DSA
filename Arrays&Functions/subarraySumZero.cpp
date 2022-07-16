@@ -25,6 +25,7 @@ int main()
         {
             cout << "Same case \n";
             cout << "The sum of subarray is zero" << endl;
+            cout << prefixSum[i];
         }
         else
         {

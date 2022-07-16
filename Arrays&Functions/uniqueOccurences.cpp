@@ -21,7 +21,7 @@ bool uniqueOccurrences(vector<int> &arr)
 
 int main()
 {
-    vector<int> arr{1, 2, 3, 4, 5, 6, 7};
+    vector<int> arr{1, 1, 2};
     int a;
     a = uniqueOccurrences(arr);
     cout << a;
