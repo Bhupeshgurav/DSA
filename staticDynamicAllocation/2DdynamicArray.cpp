@@ -24,4 +24,10 @@ int main()
         }
         cout << endl;
     }
+
+    // deleting
+    for (int i = 0; i < n; i++)
+    {
+        delete[] arr[i];
+    }
 }
